@@ -66,6 +66,6 @@ This is a React.js application built for the [Dinamo MEA](#). It demonstrates co
 - Optional Features Implementation: ~2 hours
 - Debugging and Testing: ~30 minutes 
 - Documentation and Refactoring: ~30 minutes 
-Total Time: ~5 hours and 15 minutes approximately
+- Total Time: ~5 hours and 15 minutes approximately
 
    
