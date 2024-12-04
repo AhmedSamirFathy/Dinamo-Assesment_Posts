@@ -1,4 +1,4 @@
-# React App
+# Posts App
 
 This is a React.js application built for the [Dinamo MEA](#). It demonstrates core React concepts, state management, and API interaction using JSONPlaceholder.
 
