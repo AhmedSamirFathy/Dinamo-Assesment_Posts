@@ -1,50 +1,71 @@
-# React + TypeScript + Vite
+# React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React.js application built for the [Dinamo MEA](#). It demonstrates core React concepts, state management, and API interaction using JSONPlaceholder.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Table of Contents**
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Setup and Installation](#setup-and-installation)
+4. [How to Run the Application](#how-to-run-the-application)
+5. [Assumptions and Challenges](#assumptions-and-challenges)
+6. [Time Spent](#time-spent)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## **Features**
+- **Fetch and display data**: Posts are fetched from JSONPlaceholder and displayed in a table.
+- **Add Posts**: Users can add new posts using a form.
+- **Edit Posts**: Posts can be edited with pre-filled form fields.
+- **Delete Posts**: A confirmation modal allows users to delete posts.
+- **Optional Features**:
+  - Server-Side Rendering (SSR) integration with Next.js (Optional, not implemented in this version).
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## **Technologies Used**
+- **Frontend**: React.js, Ant Design, TypeScript.
+- **API**: JSONPlaceholder.
+- **Tooling**: Vite, Axios.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## **Setup and Installation**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/AhmedSamirFathy/Dinamo-Assesment_Posts.git
+   cd Dinamo-Assesment_Posts
+2. **Install dependencies**:
+   ```bash
+   npm install
+
+---
+
+## **How to Run the Application**
+1. **Start the development server**:
+   ```bash
+   npm run dev
+2. **Open the application**:
+   navigate to http://localhost:5173 in your browser.
+
+---
+
+## **Assumptions and Challenges**
+- The id of newly added posts starts at 101 to distinguish them from fetched posts.
+- JSONPlaceholder does not persist changes, so added/edited/deleted posts exist only in the app state during runtime.
+- Handling temporary states for locally added posts while maintaining compatibility with API logic.
+- This was my first time to use Ant Design so it took me some time to understand and figure out how it works.
+
+---
+
+## **Time Spent**
+- Initial Setup: ~15 minutes
+- Core Features Implementation: ~2 hours
+- Optional Features Implementation: ~2 hours
+- Debugging and Testing: ~30 minutes 
+- Documentation and Refactoring: ~30 minutes 
+- Total Time: ~5 hours and 15 minutes approximately
+
+   
